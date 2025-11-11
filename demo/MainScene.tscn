@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://c3uxcxe8wpuq"]
 
-[ext_resource type="Texture2D" uid="uid://ch0aljsxfwrd6" path="res://icon.svg" id="1_3mqji"]
+[ext_resource type="Texture2D" uid="uid://cj4hsak6jy5al" path="res://assets/DVD-Video_Logo.png" id="1_3mqji"]
 
 [node name="BouncingSprite" type="BouncingSprite"]
 position = Vector2(240.95778, 240.95778)
