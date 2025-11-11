@@ -1,14 +1,14 @@
-#ifndef BOUNCY_SPRITE_H
-#define BOUNCY_SPRITE_H
+#ifndef BOUNCING_SPRITE_H
+#define BOUNCING_SPRITE_H
 
 #include <godot_cpp/classes/sprite2d.hpp>
 #include <godot_cpp/variant/vector2.hpp>
 
 namespace godot {
 
-class BouncySprite: public Sprite2D{
+class BouncingSprite: public Sprite2D{
 
-    GDCLASS(BouncySprite,Sprite2D);
+    GDCLASS(BouncingSprite,Sprite2D);
 
     public:
         double left_bounds;
@@ -22,8 +22,8 @@ class BouncySprite: public Sprite2D{
         static void _bind_methods();
 
     public:
-        BouncySprite();
-        ~BouncySprite();
+        BouncingSprite();
+        ~BouncingSprite();
 
         void _process(double delta) override;
 };

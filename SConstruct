@@ -9,11 +9,11 @@ sources = Glob("src/*.cpp")
 
 # Build the shared library
 library = env.SharedLibrary(
-    "demo/bin/BouncySprite{}{}".format(env["suffix"],env["SHLIBSUFFIX"]),
+    "demo/bin/BouncingSprite{}{}".format(env["suffix"],env["SHLIBSUFFIX"]),
     source = sources
 )
 # library = env.SharedLibrary(
-#     "demo/bin/BouncySprite" + env["SHLIBSUFFIX"], 
+#     "demo/bin/BouncingSprite" + env["SHLIBSUFFIX"], 
 #     source=sources
 # )
 

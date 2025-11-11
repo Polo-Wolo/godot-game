@@ -15,7 +15,7 @@ void initialize(ModuleInitializationLevel p_level){
         return;
     }
 
-    GDREGISTER_CLASS(BouncySprite);
+    GDREGISTER_CLASS(BouncingSprite);
 }
 //deinitializer
 void uninitialize(ModuleInitializationLevel p_level){

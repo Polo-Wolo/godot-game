@@ -5,7 +5,7 @@ compatibility_minimum = "4.5"
 reloadable = true
 
 [libraries]
-linux.debug.x86_64 = "res://bin/libBouncySprite.linux.template_debug.x86_64.so"
-linux.release.x86_64 = "res://bin/libBouncySprite.linux.template_release.x86_64.so"
-windows.debug.x86_64 = "res://bin/libBouncySprite.windows.template_debug.x86_64.dll"
-windows.release.x86_64 = "res://bin/libBouncySprite.windows.template_release.x86_64.dll"
+linux.debug.x86_64 = "res://bin/libBouncingSprite.linux.template_debug.x86_64.so"
+linux.release.x86_64 = "res://bin/libBouncingSprite.linux.template_release.x86_64.so"
+windows.debug.x86_64 = "res://bin/libBouncingSprite.windows.template_debug.x86_64.dll"
+windows.release.x86_64 = "res://bin/libBouncingSprite.windows.template_release.x86_64.dll"

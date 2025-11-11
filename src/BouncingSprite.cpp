@@ -3,11 +3,11 @@
 
 using namespace godot;
 
-void BouncySprite::_bind_methods()
+void BouncingSprite::_bind_methods()
 {
 }
 
-BouncySprite::BouncySprite()
+BouncingSprite::BouncingSprite()
 {
     left_bounds = 0;
     right_bounds = 1000;
@@ -17,11 +17,11 @@ BouncySprite::BouncySprite()
     velocity = Vector2(speed, speed);
 }
 
-BouncySprite::~BouncySprite()
+BouncingSprite::~BouncingSprite()
 {
 }
 
-void BouncySprite::_process(double delta)
+void BouncingSprite::_process(double delta)
 {
     Vector2 pos = get_position();
 

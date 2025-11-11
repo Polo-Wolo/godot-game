@@ -2,6 +2,6 @@
 
 [ext_resource type="Texture2D" uid="uid://ch0aljsxfwrd6" path="res://icon.svg" id="1_3mqji"]
 
-[node name="BouncySprite" type="BouncySprite"]
+[node name="BouncingSprite" type="BouncingSprite"]
 position = Vector2(240.95778, 240.95778)
 texture = ExtResource("1_3mqji")
