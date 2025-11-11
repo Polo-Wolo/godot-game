@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://com7qj57q7kmb"]
+
+[ext_resource type="Texture2D" uid="uid://j8l302masaa2" path="res://assets/DVD-Video_Logo.png" id="2_rpqi1"]
+[ext_resource type="Script" uid="uid://dyyv13m7bcrbo" path="res://bouncing_sprite.gd" id="2_x4av3"]
+
+[node name="Main" type="Node"]
+metadata/bottom_bounds = 0
+metadata/top_bounds = 0
+metadata/right_bounds = 0
+metadata/left_bounds = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(145, 86)
+texture = ExtResource("2_rpqi1")
+script = ExtResource("2_x4av3")
+
+[connection signal="direction_changed" from="Sprite2D" to="Sprite2D" method="_on_direction_changed"]
