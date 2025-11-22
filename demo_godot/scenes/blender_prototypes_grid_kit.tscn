@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://d35fs0twce7ef"]
+
+[ext_resource type="PackedScene" uid="uid://dv35jyipicgxl" path="res://assets/models/prototypes/Blender_PrototypesGridKit.blend" id="1_v2m67"]
+
+[node name="Blender_PrototypesGridKit" instance=ExtResource("1_v2m67")]
