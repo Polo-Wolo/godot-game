@@ -1,3 +1,3 @@
 # godot-game
 
-Test git-flow 1
+Test git-flow 2
