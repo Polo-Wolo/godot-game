@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://db6ab4sv5vk3h"]
+
+[ext_resource type="PackedScene" uid="uid://b61vsvheaiv36" path="res://scenes/enemy_base.tscn" id="1_8d72b"]
+[ext_resource type="Resource" uid="uid://hetqnc5uwef1" path="res://resources/enemies/wraith_1_resource.tres" id="2_akukd"]
+[ext_resource type="Resource" uid="uid://cctvyo1wxe7ke" path="res://resources/enemies/wraith_2_resource.tres" id="3_swclr"]
+[ext_resource type="Resource" uid="uid://b64pjf1we27j2" path="res://resources/enemies/wraith_3_resource.tres" id="4_61lef"]
+
+[node name="enemy_world" type="Node2D"]
+
+[node name="Area2D" type="StaticBody2D" parent="."]
+position = Vector2(565.9999, 407)
+scale = Vector2(0.6000012, 0.6000012)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+position = Vector2(-130.79358, 221.34308)
+scale = Vector2(11.061046, 11.061046)
+polygon = PackedVector2Array(-55, -65, -55, 0, 83, 0, 83, -64, 100, -64, 100, 21, -74, 21, -74, -65)
+
+[node name="Polygon2D" type="Polygon2D" parent="Area2D"]
+color = Color(0.05, 0.05, 0.05, 1)
+polygon = PackedVector2Array(-1089.9977, -539.99896, -743.33167, -543.3323, -739.99835, 224.99951, 784.99866, 224.99951, 781.6653, -486.66574, 978.33167, -483.3324, 1068.3314, 506.66565, -1171.6642, 531.66565)
+
+[node name="EnemyBase" parent="." instance=ExtResource("1_8d72b")]
+position = Vector2(552.99994, 232.99995)
+collision_layer = 2
+enemy_stats = ExtResource("2_akukd")
+
+[node name="EnemyBase2" parent="." instance=ExtResource("1_8d72b")]
+position = Vector2(674.99994, 238.99997)
+collision_layer = 2
+enemy_stats = ExtResource("3_swclr")
+
+[node name="EnemyBase3" parent="." instance=ExtResource("1_8d72b")]
+position = Vector2(436.99988, 222.99998)
+collision_layer = 2
+enemy_stats = ExtResource("4_61lef")

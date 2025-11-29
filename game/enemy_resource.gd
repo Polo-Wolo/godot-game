@@ -1,0 +1,9 @@
+extends Resource
+class_name EnemyType
+
+@export var texture: Texture2D
+@export var name: String
+
+@export var speed:  float
+@export var damage: float
+@export var health: float

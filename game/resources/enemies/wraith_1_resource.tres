@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EnemyType" load_steps=3 format=3 uid="uid://hetqnc5uwef1"]
+
+[ext_resource type="Script" uid="uid://gxx0yam0vgtq" path="res://enemy_resource.gd" id="1_nxaj3"]
+[ext_resource type="Texture2D" uid="uid://h1oiidfx2f0y" path="res://assets/players/head_1.png" id="2_441x3"]
+
+[resource]
+script = ExtResource("1_nxaj3")
+texture = ExtResource("2_441x3")
+name = "Wraith_1"
+speed = 200.0
+damage = 75.0
+health = 100.0
+metadata/_custom_type_script = "uid://gxx0yam0vgtq"
