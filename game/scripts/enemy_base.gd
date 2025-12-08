@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @export var enemy_stats: EnemyType
 @onready var sprite: Sprite2D = $enemy_sprite
+@onready var sprite_body: Sprite2D = $body
 
 var start_position: Vector2
 var moving_right: bool
@@ -9,7 +10,7 @@ var moving_right: bool
 var movement_range = 250
 
 func _ready():
-	find_starting_direction()
+	_find_starting_direction()
 	_find_appearance()
 	start_position = position
 
@@ -26,8 +27,8 @@ func move_enemy(delta):
 		direction.x += 1
 	else:
 		direction.x -= 1
-		
-	position += direction.normalized() * enemy_stats.speed * delta
+	if enemy_stats:
+		position += direction.normalized() * enemy_stats.speed * delta
 	
 	if position.x >= start_position.x + movement_range:
 		moving_right = false
@@ -36,7 +37,7 @@ func move_enemy(delta):
 		
 	_update_sprite_direction(direction)
 
-func find_starting_direction():
+func _find_starting_direction():
 	var array: Array = [1, 2]
 	array.shuffle()
 	if array.front() == 1:
@@ -48,5 +49,14 @@ func _update_sprite_direction(dir: Vector2) -> void:
 	sprite.flip_h = dir.x < 0
 	
 func _find_appearance():
-	sprite.texture = enemy_stats.texture
-	pass
+	if enemy_stats == null:
+		return
+
+	if enemy_stats.texture:
+		sprite.texture = enemy_stats.texture	
+
+	sprite_body.texture = enemy_stats.sprite_texture
+	
+	for child in sprite_body.get_children():
+		if child is Sprite2D:
+			child.texture = enemy_stats.sprite_texture

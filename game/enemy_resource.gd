@@ -7,3 +7,5 @@ class_name EnemyType
 @export var speed:  float
 @export var damage: float
 @export var health: float
+
+@export var sprite_texture: Texture2D
