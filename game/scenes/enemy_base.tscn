@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://b61vsvheaiv36"]
+[gd_scene load_steps=8 format=3 uid="uid://b61vsvheaiv36"]
 
 [ext_resource type="Texture2D" uid="uid://h1oiidfx2f0y" path="res://assets/players/head_1.png" id="1_fr7lv"]
 [ext_resource type="Script" uid="uid://d31af6nv74nch" path="res://scripts/enemy_base.gd" id="1_sw0xa"]
@@ -6,6 +6,151 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vefth"]
 size = Vector2(287.83307, 368.7495)
+
+[sub_resource type="Animation" id="Animation_j1ss0"]
+resource_name = "walk"
+loop_mode = 1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Skeleton2D/hip/back_leg:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 2, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0.08541223, -0.083333336, -0.014235372, 0, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Skeleton2D/hip/front_leg:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 2, 0),
+"points": PackedFloat32Array(-0.0076426407, -0.25, 0, 0.25, 0, -0.08997762, -0.083333336, 0.013722497, 0, 0, -0.0076426407, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Skeleton2D/hip/back_leg:position:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2, 0, 0),
+"points": PackedFloat32Array(52.08326, -0.25, 0, 0.25, 0, -5, -0.041666668, 9.513877, 0, 0, -46, -0.041666668, 6.8333335, 0, 0, -5, -0.041666668, 9.513877, 0, 0, 52.08326, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Skeleton2D/hip/back_leg:position:y")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2, 0, 0),
+"points": PackedFloat32Array(4.166672, -0.25, 0, 0.25, 0, 5.0000005, -0.041666668, -0.13888805, 0, 0, -1, -0.041666668, 1.0000001, 0, 0, 5.0000005, -0.041666668, -0.13888805, 0, 0, 4.166672, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Skeleton2D/hip/front_leg:position:x")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2, 0, 0),
+"points": PackedFloat32Array(-47.916595, -0.25, 0, 0.25, 0, -2, -0.041666668, -7.652766, 0, 0, 42, -0.041666668, -7.3333335, 0, 0, -2, -0.041666668, -7.652766, 0, 0, -47.916595, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Skeleton2D/hip/front_leg:position:y")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2, 0, 0),
+"points": PackedFloat32Array(6.25, -0.25, 0, 0.25, 0, 4, -0.041666668, 0.375, 0, 0, -3, -0.041666668, 1.1666667, 0, 0, 4, -0.041666668, 0.375, 0, 0, 6.25, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75, 1)
+}
+
+[sub_resource type="Animation" id="Animation_vv3x1"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Skeleton2D/hip/back_leg:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Skeleton2D/hip/front_leg:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-0.0076426407, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Skeleton2D/hip/back_leg:position:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(52.08326, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Skeleton2D/hip/back_leg:position:y")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(4.166672, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Skeleton2D/hip/front_leg:position:x")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-47.916595, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Skeleton2D/hip/front_leg:position:y")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(6.25, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lxe82"]
+_data = {
+&"RESET": SubResource("Animation_vv3x1"),
+&"walk": SubResource("Animation_j1ss0")
+}
 
 [node name="EnemyBase" type="CharacterBody2D"]
 script = ExtResource("1_sw0xa")
@@ -27,8 +172,8 @@ region_rect = Rect2(42.536133, 55.30684, 356.0839, 365.45728)
 
 [node name="front_leg" type="Sprite2D" parent="body"]
 z_index = -1
-position = Vector2(-47.152336, 181.24707)
-rotation = -0.007642641
+position = Vector2(3.151472, 178.64832)
+rotation = -0.032795165
 scale = Vector2(0.99999994, 0.99999994)
 texture = ExtResource("3_j1ss0")
 region_enabled = true
@@ -36,7 +181,8 @@ region_rect = Rect2(93.91141, 450.88065, 109.83685, 196.64334)
 
 [node name="back_leg" type="Sprite2D" parent="body"]
 z_index = -2
-position = Vector2(52.08326, 179.16667)
+position = Vector2(-9.353832, 179.7106)
+rotation = 0.02609259
 texture = ExtResource("3_j1ss0")
 region_enabled = true
 region_rect = Rect2(200.71797, 438.8205, 111.60838, 219.67365)
@@ -55,7 +201,7 @@ remote_path = NodePath("../../../body")
 
 [node name="front_leg" type="Bone2D" parent="Skeleton2D/hip"]
 position = Vector2(-47.916595, 6.25)
-rotation = -0.007642641
+rotation = -0.0076426407
 scale = Vector2(0.99999994, 0.99999994)
 rest = Transform2D(0.99997073, -0.0076425667, 0.0076425667, 0.99997073, -47.916595, 6.25)
 auto_calculate_length_and_angle = false
@@ -78,3 +224,6 @@ position = Vector2(0, 100)
 remote_path = NodePath("../../../../body/back_leg")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_lxe82")
+}
